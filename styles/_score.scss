@@ -1,0 +1,17 @@
+@import "./variables";
+
+.score {
+  height: 30vh;
+  color: $color;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  & h2 {
+    font-size: 30px;
+  }
+  & p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+}

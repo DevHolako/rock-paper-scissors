@@ -1,0 +1,15 @@
+@import "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cascidia Code", sans-serif;
+}
+section {
+  height: 100vh;
+  background-color: $bgColor;
+}
+@import "./score";
+@import "./intro";
+@import "./match";
+@import "./animations";

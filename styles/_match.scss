@@ -1,0 +1,48 @@
+@import "./variables";
+
+.match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease 0.5s;
+  & button {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: $color;
+    background-color: gray;
+    border-radius: 25px;
+    &:hover {
+      background: #50b744;
+      transition: all 0s ease;
+    }
+  }
+}
+.winner {
+  color: $color;
+  text-align: center;
+  font-size: 50px;
+}
+.hands,
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.player-hand {
+  transform: rotateY(180deg);
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
